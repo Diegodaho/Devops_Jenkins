@@ -13,12 +13,22 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ServicioController</name>
 	<description>Demo project for Spring Boot</description>
+	
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+	    <!-- Inicio despliegue -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Fin despliegue -->
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
